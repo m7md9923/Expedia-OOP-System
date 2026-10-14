@@ -10,11 +10,12 @@ public class Hotel
     public decimal Rating { get; set; }
     public string Phone { get; set; }
     public bool IsActive { get; set; }
-    
     public int CityId { get; set; } // FK
     
     public City? City { get; set; }
-
+    
+    public List<RoomType> RoomTypes { get; set; } = new List<RoomType>();
+    
     public Hotel(int id, string name, string address, string description, 
         decimal rating, string phone, bool isActive, int cityId)
     {
