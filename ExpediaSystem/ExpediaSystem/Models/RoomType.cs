@@ -9,8 +9,8 @@ public class RoomType
     public decimal BasePrice { get; set; }
     public int HotelId { get; set; }  // FK
     
-    public Hotel? Hotel { get; set; }  // Navigation property
-
+    // Navigation properties
+    public Hotel? Hotel { get; set; }  
     public List<Room> Rooms { get; set; } = new List<Room>();
     public List<RoomTypeAmenity> RoomTypeAmenities { get; set; } = new List<RoomTypeAmenity>();
     

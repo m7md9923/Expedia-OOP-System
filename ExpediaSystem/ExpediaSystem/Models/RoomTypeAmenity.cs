@@ -5,6 +5,7 @@ public class RoomTypeAmenity
     public int RoomTypeId { get; set; }  // PK, FK
     public int AmenityId { get; set; }  // PK, FK
     
+    // Navigation properties
     public RoomType? RoomType { get; set; }
     public Amenity? Amenity { get; set; }
     

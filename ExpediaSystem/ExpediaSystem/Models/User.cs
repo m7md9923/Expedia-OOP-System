@@ -8,7 +8,6 @@ public abstract class User
     public string Password { get; set; }
     public string Role { get; set; }
     public string PhoneNumber { get; set; }
-    
     public bool IsActive { get; set; }
 
     public User (int id, string name, string email, string password, string role, string phoneNumber, bool isActive)

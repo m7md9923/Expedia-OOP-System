@@ -6,6 +6,7 @@ public class Country
     public string Name { get; set; }
     public string CurrencyCode { get; set; }
 
+    // Navigation property
     public List<City> Cities { get; set; } = new List<City>();
     
     public Country(int id, string name, string currencyCode)

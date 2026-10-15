@@ -4,6 +4,8 @@ public class HotelAmenity
 {
     public int HotelId { get; set; }  // PK, FK
     public int AmenityId { get; set; }  // PK, FK
+    
+    // Navigation properties
     public Hotel? Hotel { get; set; }
     public Amenity? Amenity { get; set; }
 

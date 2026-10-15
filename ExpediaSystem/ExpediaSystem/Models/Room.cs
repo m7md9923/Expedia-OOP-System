@@ -8,7 +8,8 @@ public class Room
     public string Status { get; set; }
     public int RoomTypeId { get; set; }  // FK
     
-    public RoomType? RoomType { get; set; } // Navigation property
+    // Navigation property
+    public RoomType? RoomType { get; set; } 
     
     public Room(int id, string roomNumber, int floor, string status, int roomTypeId)
     {

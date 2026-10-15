@@ -12,11 +12,12 @@ public class Hotel
     public bool IsActive { get; set; }
     public int CityId { get; set; } // FK
     
+    // Navigation properties
     public City? City { get; set; }
-    
     public List<RoomType> RoomTypes { get; set; } = new List<RoomType>();
-    
     public List<HotelAmenity> HotelAmenities { get; set; } = new List<HotelAmenity>();
+    public List<Favorite> Favorites { get; set; } = new List<Favorite>();
+    public List<Review> Reviews { get; set; } = new List<Review>();
     
     public Hotel(int id, string name, string address, string description, 
         decimal rating, string phone, bool isActive, int cityId)

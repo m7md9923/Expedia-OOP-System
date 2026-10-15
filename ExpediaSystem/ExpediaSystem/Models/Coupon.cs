@@ -7,15 +7,19 @@ public class Coupon
     public decimal DiscountPercent { get; set; }
     public decimal MaxDiscount { get; set; }
     public DateTime ExpirationDate { get; set; }
+    public int MaxUsages { get; set; }
+    public int UsedCount { get; set; }
     public bool IsActive { get; set; }
     
-    public Coupon(int id, string code, decimal discountPercent, decimal maxDiscount, DateTime expirationDate, bool isActive)
+    public Coupon(int id, string code, decimal discountPercent, decimal maxDiscount, DateTime expirationDate, int maxUsages, int usedCount, bool isActive)
     {
         Id = id;
-        Code = code;
+        Code = code.Trim().ToUpper();
         DiscountPercent = discountPercent;
         MaxDiscount = maxDiscount;
         ExpirationDate = expirationDate;
+        MaxUsages = maxUsages;
+        UsedCount = 0;
         IsActive = isActive;
     }
     
