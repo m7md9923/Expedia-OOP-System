@@ -16,6 +16,8 @@ public class Hotel
     
     public List<RoomType> RoomTypes { get; set; } = new List<RoomType>();
     
+    public List<HotelAmenity> HotelAmenities { get; set; } = new List<HotelAmenity>();
+    
     public Hotel(int id, string name, string address, string description, 
         decimal rating, string phone, bool isActive, int cityId)
     {
